@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MAPP - A Web Map Library</title>
+	<meta charset="utf-8">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/openlayers/dist/ol.css">
+
+	<!-- Javascript -->
+	<script type="text/javascript" src="node_modules/vue/dist/vue.js"></script>
+	<script type="text/javascript" src="node_modules/vue-resource/dist/vue-resource.js"></script>
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="node_modules/openlayers/dist/ol.js"></script>
+	<script type="text/javascript" src="src/mapp/Mapp.js"></script>
+</head>
+<body>
+
+<div id="map"></div>
+
+<script type="text/javascript">
+	$( document ).ready(function() {
+		var mapp = new Mapp({target:"map"});	
+	});
+</script>
+</body>
+</html>
