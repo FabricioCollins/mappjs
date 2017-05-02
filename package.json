@@ -23,6 +23,7 @@
   "homepage": "https://github.com/FabricioCollins/mappjs#readme",
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "dist": "^0.1.2",
     "express": "^4.15.2",
     "jquery": "^3.2.1",
     "openlayers": "^4.1.0",

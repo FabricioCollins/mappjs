@@ -13,7 +13,6 @@ var defaultOptions = {
 	mouseWheel: true,
 	showScale: true,
 	showPanZoomBar: true,	
-	featureInfoObject: null,
 	loadTilesWhileAnimating: true
 };
 
@@ -114,10 +113,10 @@ var Mapp = function(settings) {
                 self.flyTo(locations[index], next);
               }, delay);
             } else {
-              alert('Tour complete');
+              console.log('Tour complete');
             }
           } else {
-            alert('Tour cancelled');
+            console.log('Tour cancelled');
           }
         }
         next(true);
