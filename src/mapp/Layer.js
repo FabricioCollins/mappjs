@@ -54,6 +54,6 @@ var Layer = function(object, settings) {
 	};
 
 	this.render = function() {
-
+		return this;
 	};
 };

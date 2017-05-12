@@ -6,7 +6,7 @@ var bern = ol.proj.fromLonLat([7.4458, 46.95]);
 
 var defaultOptions = {
 	target: "map",
-	source: 
+	source: "",
 	layers: [],
 	controls: [],
 	showNavigation: true,
@@ -130,11 +130,13 @@ var Mapp = function(settings) {
         var s = 7.5625, p = 2.75, l;
         if (t < (1 / p)) {
           l = s * t * t;
-        } else {
+        } 
+        else {
           if (t < (2 / p)) {
             t -= (1.5 / p);
             l = s * t * t + 0.75;
-          } else {
+          } 
+          else {
             if (t < (2.5 / p)) {
               t -= (2.25 / p);
               l = s * t * t + 0.9375;
@@ -146,8 +148,7 @@ var Mapp = function(settings) {
         }
         return l;
       }
-
-      // An elastic easing method (from https://github.com/DmitryBaranovskiy/raphael).
+      
       this.elastic = function(t) {
         return Math.pow(2, -10 * t) * Math.sin((t - 0.075) * (2 * Math.PI) / 0.3) + 1;
       }
